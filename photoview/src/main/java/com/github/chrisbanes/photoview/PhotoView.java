@@ -27,7 +27,7 @@ import android.widget.ImageView;
 
 /**
  * A zoomable {@link ImageView}. See {@link PhotoViewAttacher} for most of the details on how the zooming
- * is accomplished
+ * is accomplished hy
  */
 public class PhotoView extends ImageView {
 
