@@ -29,7 +29,7 @@ import android.widget.ImageView;
  * A zoomable {@link ImageView}. See {@link PhotoViewAttacher} for most of the details on how the zooming
  * is accomplished hy
  */
-public class PhotoView extends ImageView {
+public class PhotoView extends android.support.v7.widget.AppCompatImageView {
 
     private PhotoViewAttacher attacher;
     private ScaleType pendingScaleType;
@@ -44,12 +44,6 @@ public class PhotoView extends ImageView {
 
     public PhotoView(Context context, AttributeSet attr, int defStyle) {
         super(context, attr, defStyle);
-        init();
-    }
-
-    @TargetApi(21)
-    public PhotoView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
         init();
     }
 
